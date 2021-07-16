@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action="/insert" method="post")
+    p title  
+    input(type="text" name ="title")
+    p description 
+    input(type="text" name ="description")
+    p 
+    button(type="submit") sign up
